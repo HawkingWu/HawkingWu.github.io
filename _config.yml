@@ -1,11 +1,11 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: 欢庆的主页
+SEOTitle: 欢庆的主页 | huanqing’ Pages
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: hawkingwu@gmail.com
+description: "关于电路与程序、产品与设计 | 欢庆, Geek, Electronic Engineer, Layout Engineer | 这里是 欢庆 的个人博客，与你一起发现更大的世界。"
+keyword: "huanqing, @huanqing, 欢庆的博客, Huanqing Blog, 博客, 个人网站, 互联网, Altium, 嵌入式, 设计"
+url: "https://huanqingwu.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,10 +13,13 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
+weibo_username:      false
+zhihu_username:      false
+github_username:     HawkingWu
+twitter_username:    false
+bilibili_username:   110937609
+taobao_username:     shop123121737
+email_username:      hawkingwu@gmail.com
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -30,7 +33,7 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN  
+#timezone: CN
 
 
 
@@ -59,15 +62,25 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username: false
 
 # Netease settings
 netease_comment: false
 
+# Gitalk
+gitalk:
+  enable: true    # 是否开启Gitalk评论
+  clientID: a3401aa12fbbab997462                            #生成的clientID
+  clientSecret: 470f85f9564d907dde30a468994697e3b5478375    #生成的clientSecret
+  repo: huanqingwu.github.io    #仓库名称
+  owner: huanqingwu    # github用户名
+  admin: huanqingwu
+  distractionFreeMode: true # 是否启用类似FB的阴影遮罩
+
 
 
 # Analytics settings
-# Baidu Analytics 
+# Baidu Analytics
 # ba_track_id: [your track id]
 
 # Google Analytics
@@ -78,7 +91,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "黄玄，前端娱乐圈 NPC，编程语言/编译器初心者 <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
+sidebar-about-description: "欢庆；电子攻城狮 & 程序猿 & 三维制造 & 极客 ； <br> HawkingWu；An Electronics Engineer & Programmer & 3D Maker & Geek；"
 sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -106,28 +119,19 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序（Midare）",
-        href: "http://mida.re/"
+        title: "吴川斌的博客",
+        href: "https://www.mr-wu.cn/"
     },{
-        title: "Sherry Woo",
-        href: "https://sherrywoo.me/"
+        title: "稚晖的个人站",
+        href: "http://pengzhihui.com/"
     },{
-        title: "Kun Qian",
-        href: "http://kunq.me"
+        title: "雷诺-玻尔兹曼的博客",
+        href: "http://blog.sina.com.cn/openuav"
     },{
-        title: "Ebn Zhang",
-        href: "http://ebnbin.com/"
+        title: "ELECTRONOOBS",
+        href: "https://electronoobs.com/"
     },{
-        title: "SmdCn",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "JiyinYiyong",
-        href: "http://tiye.me/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
+        title: "您的云端超级应用空间",
+        href: "https://www.uzer.me/"
     }
 ]
