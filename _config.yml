@@ -91,7 +91,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "欢庆；电子攻城狮 & 程序猿 & 三维制造 & 极客 ； <br> HawkingWu；An Electronics Engineer & Programmer & 3D Maker & Geek；"
+sidebar-about-description: "欢庆； <br> 电子攻城狮 & 程序猿 & 三维制造 & 极客 ； <br> HawkingWu； <br> An Electronics Engineer & Programmer & 3D Maker & Geek；"
 sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
