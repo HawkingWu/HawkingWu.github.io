@@ -16,7 +16,7 @@ tags:
 
 前段时间手贱花了七百多买了台打印机，一开始用的便宜PLA是陈年老料，打印底层的时候喷头蹭料，就像滑泥巴一样（见图）。
 
-![img](https://bn1302files.storage.live.com/y4mGJe8Tf7MQvw5bWK8SyWFHnnCeGft58mcls9-xFiQwVOY530jjlNFtLjRLliF6lcaxT2pml0CCrlc1ehmYtczyJgAgklhbkf8IwmyQC3chqZ3pgiZUZNxswkAusCjdSkBEjfbHTh3Bw-YWr_svP5TF7lWwCQWKYyltTpEVCEaIvom8Oz6ZnIvzvDMXnPm_npj?width=3200&height=1197&cropmode=none)
+<img src="https://bn1302files.storage.live.com/y4mGJe8Tf7MQvw5bWK8SyWFHnnCeGft58mcls9-xFiQwVOY530jjlNFtLjRLliF6lcaxT2pml0CCrlc1ehmYtczyJgAgklhbkf8IwmyQC3chqZ3pgiZUZNxswkAusCjdSkBEjfbHTh3Bw-YWr_svP5TF7lWwCQWKYyltTpEVCEaIvom8Oz6ZnIvzvDMXnPm_npj?width=3200&height=1197&cropmode=none" width="3200" height="1197" />
 
 起初以为是材料膨胀系数太大，于是调整挤出量暂时消除了这个问题。一周后店铺做好评活动给我寄了一卷好材料，试用了一下发现“出料过多”的现象没有了，取而代之的是喷头堵住，挤出机滑齿，并且打印出来的零件不论大小，高度统统低1mm。联系厂家客服也承认打印机回零点后会有Z轴空驶的情况，但是不会这么大。我用手晃了下Z轴的滑块，丝杆螺母和丝杆之间确实有零点几的间隙，于是参考知乎文章《[关于3D打印机Z轴的回差问题及G Code应对](https://zhuanlan.zhihu.com/p/337591131)》，尝试后仍不能解决问题。
 
