@@ -17,6 +17,9 @@ tags:
 
 <a href="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbmNzcU1kZGpqZDR1M3Z1bHkxTkt5b0stRHdi.png" target="_blank"><img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbmNzcU1kZGpqZDR1M3Z1bHkxTkt5b0stRHdi.png"/></a>
 
+<a href="https://note.youdao.com/yws/public/resource/31cd0e190be5b863eb8f1dc673965ab4/xmlnote/361457735EF14471B3B58E332FA0A9FB/366" target="_blank"><img src="https://note.youdao.com/yws/public/resource/31cd0e190be5b863eb8f1dc673965ab4/xmlnote/361457735EF14471B3B58E332FA0A9FB/366"/></a>
+
+
 起初以为是材料膨胀系数太大，于是调整挤出量暂时消除了这个问题。一周后店铺做好评活动给我寄了一卷好材料，试用了一下发现“出料过多”的现象没有了，取而代之的是喷头堵住，挤出机滑齿，并且打印出来的零件不论大小，高度统统低1mm。联系厂家客服也承认打印机回零点后会有Z轴空驶的情况，但是不会这么大。我用手晃了下Z轴的滑块，丝杆螺母和丝杆之间确实有零点几的间隙，于是参考知乎文章《[关于3D打印机Z轴的回差问题及G Code应对](https://zhuanlan.zhihu.com/p/337591131)》，尝试后仍不能解决问题。
 
 问题似乎还与Z轴单侧丝杆传动有关，淘宝的低成本打印机XYZ轴几乎都只用了一个电机，由于Prusa i3 类打印机热床是移动的，Z轴丝杆就只能安装在一侧，另一侧只能靠长长的导轨传动。
