@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: hawkingwu@gmail.com
 description: "关于电路与程序、产品与设计 | 欢庆, Geek, Electronic Engineer, Layout Engineer | 这里是 欢庆 的个人博客，与你一起发现更大的世界。"
 keyword: "huanqing, @huanqing, 欢庆的博客, Huanqing Blog, 博客, 个人网站, 互联网, Altium, 嵌入式, 设计"
-url: "https://huanqingwu.github.io"              # your host, for absolute URL
+url: "https://hawkingwu.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
