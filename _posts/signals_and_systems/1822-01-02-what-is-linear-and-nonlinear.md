@@ -10,4 +10,6 @@ tags:
   - 信号与系统专栏
 ---
 
-<iframe src="//player.bilibili.com/player.html?aid=795866807&bvid=BV1BC4y1p7Zs&cid=194339325&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<div class="responsive-video-container">
+  <iframe src="//player.bilibili.com/player.html?aid=795866807&bvid=BV1BC4y1p7Zs&cid=194339325&page=1&as_wide=1&high_quality=1&danmaku=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
