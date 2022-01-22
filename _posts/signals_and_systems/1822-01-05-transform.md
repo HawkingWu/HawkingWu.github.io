@@ -89,7 +89,7 @@ tags:
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
 
   $$
-f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+R_{n}(x)
+f(x)=\frac{f(x_{0})}{0 !}+\frac{f^{\prime}(x_{0})}{1 !}(x-x_{0})+\frac{f^{\prime \prime}(x_{0})}{2 !}(x-x_{0})^{2}+\ldots+\frac{f^{(n)}(x_{0})}{n !}(x-x_{0})^{n}+R_{n}(x)
   $$
 
    <center><font size="2">泰勒公式</font></center> 
