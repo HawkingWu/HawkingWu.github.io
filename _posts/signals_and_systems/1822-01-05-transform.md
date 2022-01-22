@@ -87,7 +87,8 @@ tags:
 - #### 泰勒级数
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
-  $ f(x)=\frac{f(x_0)}{0 !}+\frac{f^\prime(x_0)}{1 !}(x-x_0)+\frac{f^{\prime \prime}(x_0)}{2 !}(x-x_0)^{2}+\ldots+\frac{f^{(n)}(x_0)}{n !}(x-x_0)^n+R_n(x) $ 
+
+  ![image-20220122185650594](https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122185650594.png)
 
    <center><font size="2">泰勒公式</font></center> 
 
