@@ -534,22 +534,35 @@ tags:
     <mo>&#x22EF;</mo>
     <mo data-mjx-texclass="CLOSE">)</mo>
   </mrow>
-</math>
 
   其中 $(-\pi \leq x \leq \pi)$ 
-
-  注意，和泰勒展开类似，这里也是“完美的等于“，不是“约等于”。
-
-  只不过，傅里叶级数是拆解成“三角函数”的累加。
-
   
-
+  注意，和泰勒展开类似，这里也是“完美的等于“，不是“约等于”。
+  
+  只不过，傅里叶级数是拆解成“三角函数”的累加。
+  
+  
+  
 - #### 三角级数的优势
 
   三角函数 $\sin x$（或 $\cos x$）的微分依然是三角函数：
-  $$
-  (\sin x)^{\prime}=\cos x
-  $$
+  
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mo stretchy="false">(</mo>
+  <mi>sin</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+  <msup>
+    <mo stretchy="false">)</mo>
+    <mrow data-mjx-texclass="ORD">
+      <mi data-mjx-alternate="1">&#x2032;</mi>
+    </mrow>
+  </msup>
+  <mo>=</mo>
+  <mi>cos</mi>
+  <mo data-mjx-texclass="NONE">&#x2061;</mo>
+  <mi>x</mi>
+
   积分也依然是三角函数：
   $$
   \int \sin x d x=-\cos x+c
