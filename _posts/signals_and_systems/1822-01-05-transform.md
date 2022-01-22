@@ -87,11 +87,11 @@ tags:
 - #### 泰勒级数
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
-  $$
+  
   \begin{equation}
 f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+R_{n}(x)
 \end{equation}
-  $$
+  
    <center><font size="2">泰勒公式</font></center> 
   
   它好像是无缘无故突然从石头缝里蹦出来的一个概念，但真相完全不是这样。
@@ -115,35 +115,35 @@ f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\le
 - #### 神奇拆解
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
-  $$
+  
   \begin{equation}
   \sin x=+\frac{x^{1}}{1 !}-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots
   \end{equation}
-  $$
+  
    <center><font size="2">sinx 的泰勒展开</font></center> 
 
   注意，这里不是约等于，是“完美的”等于，只不过，后面是无穷多项累加。
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
-  $$
+  
   \begin{equation}
   \sin x=x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}+o\left(x^{5}\right)
   \end{equation}
-  $$
+  
   尾巴直接扔掉，虽然会造成误差，但余项都是比 $x^5$ 高阶的无穷小，因此可以得出：
-  $$
+  
   \begin{equation}
   \sin x \approx x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}
   \end{equation}
-  $$
+  
     <center><font size="2">使用前三项估算</font></center> 
   
   而且，估算造成的误差不会超过：
-  $$
+  
   \begin{equation}
   \frac{1}{7 !}|x|^{7}
   \end{equation}
-  $$
+  
   
 - #### 展开的优势
 
@@ -166,11 +166,11 @@ f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\le
   类似泰勒级数的“拆解”原理，我们可以将一些函数展开成“傅里叶级数”。
 
   比如，可以在一个周期内，将 $x^2$ 展开：
-  $$
+  
   \begin{equation}
   x^{2}=\frac{\pi^{2}}{3}-4\left(\cos x-\frac{\cos 2 x}{2^{2}}+\frac{\cos 3 x}{3^{2}}-\cdots\right)
   \end{equation}
-  $$
+  
   其中 $(-\pi \leq x \leq \pi)$ 
   
   注意，和泰勒展开类似，这里也是“完美的等于“，不是“约等于”。
@@ -182,17 +182,17 @@ f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\le
 - #### 三角级数的优势
 
   三角函数 $\sin x$（或 $\cos x$）的微分依然是三角函数：
-  $$
+  
   \begin{equation}
 (\sin x)^{\prime}=\cos x
 \end{equation}
-  $$
+  
   积分也依然是三角函数：
-  $$
+  
   \begin{equation}
 \int \sin x d x=-\cos x+c
 \end{equation}
-  $$
+  
   在信号分析时，这个特点会带来很大的优势。
 
   **因为，微分和积分运算，只可能改变三角信号的“相位”和“幅度”，而不改变其类型。**
