@@ -613,5 +613,10 @@ tags:
 
   各种稀奇古怪的方法能流传至今，都是有原因的。
 
-  
+
+
+
+\begin{equation}
+\int \sin x d x=-\cos x+c
+\end{equation}
 
