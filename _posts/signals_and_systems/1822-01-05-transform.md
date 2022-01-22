@@ -114,7 +114,7 @@ tags:
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
   $$
-  \sin x=+\frac{x^{1}}{1 !}-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots
+  {\sin x=+\frac{x^{1}}{1 !}-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots}
   $$
 
    <center><font size="2">sinx 的泰勒展开</font></center> 
