@@ -5,6 +5,8 @@ layout: post
 date:   2022-01-21
 author: "Huanqing"
 header-style: text
+mathjax: true
+catalog: true
 hidden: true
 tags:
   - 信号与系统专栏
