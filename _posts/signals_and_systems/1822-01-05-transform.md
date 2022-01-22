@@ -275,7 +275,7 @@ tags:
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
 
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>sin</mi>
     <mo data-mjx-texclass="NONE">⁡</mo>
     <mi>x</mi>
@@ -566,9 +566,21 @@ tags:
   </math>
 
   积分也依然是三角函数：
-  $$
-  \int \sin x d x=-\cos x+c
-  $$
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mo data-mjx-texclass="OP">∫</mo>
+  <mi>sin</mi>
+  <mo data-mjx-texclass="NONE">⁡</mo>
+  <mi>x</mi>
+  <mi>d</mi>
+  <mi>x</mi>
+  <mo>=</mo>
+  <mo>−</mo>
+  <mi>cos</mi>
+  <mo data-mjx-texclass="NONE">⁡</mo>
+  <mi>x</mi>
+  <mo>+</mo>
+  <mi>c</mi>
+</math>
   在信号分析时，这个特点会带来很大的优势。
 
   **因为，微分和积分运算，只可能改变三角信号的“相位”和“幅度”，而不改变其类型。**
