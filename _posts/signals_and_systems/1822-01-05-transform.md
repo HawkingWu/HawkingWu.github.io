@@ -342,7 +342,7 @@ tags:
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
   
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>sin</mi>
     <mo data-mjx-texclass="NONE">⁡</mo>
     <mi>x</mi>
