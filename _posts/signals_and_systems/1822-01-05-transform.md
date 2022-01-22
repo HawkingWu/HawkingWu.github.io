@@ -475,11 +475,8 @@ tags:
   类似泰勒级数的“拆解”原理，我们可以将一些函数展开成“傅里叶级数”。
 
   比如，可以在一个周期内，将 $x^2$ 展开：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mtext mathcolor="red">\u</mtext>
-  <mn>32</mn>
-  <mi>E</mi>
   <msup>
     <mi>x</mi>
     <mrow data-mjx-texclass="ORD">
@@ -537,7 +534,7 @@ tags:
     <mo>&#x22EF;</mo>
     <mo data-mjx-texclass="CLOSE">)</mo>
   </mrow>
-  </math>
+</math>
 
   其中 $(-\pi \leq x \leq \pi)$ 
 
