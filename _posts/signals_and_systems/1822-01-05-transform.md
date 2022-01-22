@@ -132,8 +132,6 @@ tags:
 
   而且，估算造成的误差不会超过：
 
-  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122191332960.png" alt="image-20220122191332960" style="zoom:20%;" />
-
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mfrac>
       <mn>1</mn>
