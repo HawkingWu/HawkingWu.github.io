@@ -87,12 +87,12 @@ tags:
 - #### 泰勒级数
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
-  
+
   $$
-\begin{equation}
-f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+R_{n}(x)
-\end{equation}
+  f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+R_{n}(x)
   $$
+
+   <center><font size="2">泰勒公式</font></center> 
 
   它好像是无缘无故突然从石头缝里蹦出来的一个概念，但真相完全不是这样。
 
