@@ -134,6 +134,26 @@ tags:
 
   <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122191332960.png" alt="image-20220122191332960" style="zoom:20%;" />
 
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mfrac>
+      <mn>1</mn>
+      <mrow>
+        <mn>7</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mrow>
+      <mo stretchy="false">|</mo>
+    </mrow>
+    <mi>x</mi>
+    <msup>
+      <mo stretchy="false">|</mo>
+      <mrow>
+        <mn>7</mn>
+      </mrow>
+    </msup>
+  </math>
+
   
 
 - #### 展开的优势
