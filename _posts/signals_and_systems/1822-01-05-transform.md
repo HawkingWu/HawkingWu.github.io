@@ -87,170 +87,11 @@ tags:
 - #### 泰勒级数
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML">
-    <mi>f</mi>
-    <mo stretchy="false">(</mo>
-    <mi>x</mi>
-    <mo stretchy="false">)</mo>
-    <mo>=</mo>
-    <mfrac>
-      <mrow>
-        <mi>f</mi>
-        <mrow data-mjx-texclass="INNER">
-          <mo data-mjx-texclass="OPEN">(</mo>
-          <msub>
-            <mi>x</mi>
-            <mrow>
-              <mn>0</mn>
-            </mrow>
-          </msub>
-          <mo data-mjx-texclass="CLOSE">)</mo>
-        </mrow>
-      </mrow>
-      <mrow>
-        <mn>0</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mo>+</mo>
-    <mfrac>
-      <mrow>
-        <msup>
-          <mi>f</mi>
-          <mrow>
-            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
-          </mrow>
-        </msup>
-        <mrow data-mjx-texclass="INNER">
-          <mo data-mjx-texclass="OPEN">(</mo>
-          <msub>
-            <mi>x</mi>
-            <mrow>
-              <mn>0</mn>
-            </mrow>
-          </msub>
-          <mo data-mjx-texclass="CLOSE">)</mo>
-        </mrow>
-      </mrow>
-      <mrow>
-        <mn>1</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mrow data-mjx-texclass="INNER">
-      <mo data-mjx-texclass="OPEN">(</mo>
-      <mi>x</mi>
-      <mo>−</mo>
-      <msub>
-        <mi>x</mi>
-        <mrow>
-          <mn>0</mn>
-        </mrow>
-      </msub>
-      <mo data-mjx-texclass="CLOSE">)</mo>
-    </mrow>
-    <mo>+</mo>
-    <mfrac>
-      <mrow>
-        <msup>
-          <mi>f</mi>
-          <mrow>
-            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
-            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
-          </mrow>
-        </msup>
-        <mrow data-mjx-texclass="INNER">
-          <mo data-mjx-texclass="OPEN">(</mo>
-          <msub>
-            <mi>x</mi>
-            <mrow>
-              <mn>0</mn>
-            </mrow>
-          </msub>
-          <mo data-mjx-texclass="CLOSE">)</mo>
-        </mrow>
-      </mrow>
-      <mrow>
-        <mn>2</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mrow data-mjx-texclass="INNER">
-        <mo data-mjx-texclass="OPEN">(</mo>
-        <mi>x</mi>
-        <mo>−</mo>
-        <msub>
-          <mi>x</mi>
-          <mrow>
-            <mn>0</mn>
-          </mrow>
-        </msub>
-        <mo data-mjx-texclass="CLOSE">)</mo>
-      </mrow>
-      <mrow>
-        <mn>2</mn>
-      </mrow>
-    </msup>
-    <mo>+</mo>
-    <mo>…</mo>
-    <mo>+</mo>
-    <mfrac>
-      <mrow>
-        <msup>
-          <mi>f</mi>
-          <mrow>
-            <mo stretchy="false">(</mo>
-            <mi>n</mi>
-            <mo stretchy="false">)</mo>
-          </mrow>
-        </msup>
-        <mrow data-mjx-texclass="INNER">
-          <mo data-mjx-texclass="OPEN">(</mo>
-          <msub>
-            <mi>x</mi>
-            <mrow>
-              <mn>0</mn>
-            </mrow>
-          </msub>
-          <mo data-mjx-texclass="CLOSE">)</mo>
-        </mrow>
-      </mrow>
-      <mrow>
-        <mi>n</mi>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mrow data-mjx-texclass="INNER">
-        <mo data-mjx-texclass="OPEN">(</mo>
-        <mi>x</mi>
-        <mo>−</mo>
-        <msub>
-          <mi>x</mi>
-          <mrow>
-            <mn>0</mn>
-          </mrow>
-        </msub>
-        <mo data-mjx-texclass="CLOSE">)</mo>
-      </mrow>
-      <mrow>
-        <mi>n</mi>
-      </mrow>
-    </msup>
-    <mo>+</mo>
-    <msub>
-      <mi>R</mi>
-      <mrow>
-        <mi>n</mi>
-      </mrow>
-    </msub>
-    <mo stretchy="false">(</mo>
-    <mi>x</mi>
-    <mo stretchy="false">)</mo>
-  </math>
-  
+  $$
+  \begin{equation}
+f(x)=\frac{f\left(x_{0}\right)}{0 !}+\frac{f^{\prime}\left(x_{0}\right)}{1 !}\left(x-x_{0}\right)+\frac{f^{\prime \prime}\left(x_{0}\right)}{2 !}\left(x-x_{0}\right)^{2}+\ldots+\frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}+R_{n}(x)
+\end{equation}
+  $$
    <center><font size="2">泰勒公式</font></center> 
   
   它好像是无缘无故突然从石头缝里蹦出来的一个概念，但真相完全不是这样。
@@ -274,186 +115,36 @@ tags:
 - #### 神奇拆解
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML">
-    <mi>sin</mi>
-    <mo data-mjx-texclass="NONE">⁡</mo>
-    <mi>x</mi>
-    <mo>=</mo>
-    <mo>+</mo>
-    <mfrac>
-      <msup>
-        <mi>x</mi>
-        <mrow>
-          <mn>1</mn>
-        </mrow>
-      </msup>
-      <mrow>
-        <mn>1</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mo>−</mo>
-    <mfrac>
-      <msup>
-        <mi>x</mi>
-        <mrow>
-          <mn>3</mn>
-        </mrow>
-      </msup>
-      <mrow>
-        <mn>3</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mo>+</mo>
-    <mfrac>
-      <msup>
-        <mi>x</mi>
-        <mrow>
-          <mn>5</mn>
-        </mrow>
-      </msup>
-      <mrow>
-        <mn>5</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mo>−</mo>
-    <mfrac>
-      <msup>
-        <mi>x</mi>
-        <mrow>
-          <mn>7</mn>
-        </mrow>
-      </msup>
-      <mrow>
-        <mn>7</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mo>+</mo>
-    <mo>⋯</mo>
-  </math>
-  
+  $$
+  \begin{equation}
+  \sin x=+\frac{x^{1}}{1 !}-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots
+  \end{equation}
+  $$
    <center><font size="2">sinx 的泰勒展开</font></center> 
 
   注意，这里不是约等于，是“完美的”等于，只不过，后面是无穷多项累加。
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML">
-    <mi>sin</mi>
-    <mo data-mjx-texclass="NONE">⁡</mo>
-    <mi>x</mi>
-    <mo>=</mo>
-    <mi>x</mi>
-    <mo>−</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mrow>
-        <mn>3</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mi>x</mi>
-      <mrow>
-        <mn>3</mn>
-      </mrow>
-    </msup>
-    <mo>+</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mrow>
-        <mn>5</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mi>x</mi>
-      <mrow>
-        <mn>5</mn>
-      </mrow>
-    </msup>
-    <mo>+</mo>
-    <mi>o</mi>
-    <mrow data-mjx-texclass="INNER">
-      <mo data-mjx-texclass="OPEN">(</mo>
-      <msup>
-        <mi>x</mi>
-        <mrow>
-          <mn>5</mn>
-        </mrow>
-      </msup>
-      <mo data-mjx-texclass="CLOSE">)</mo>
-    </mrow>
-  </math>
-  
+  $$
+  \begin{equation}
+  \sin x=x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}+o\left(x^{5}\right)
+  \end{equation}
+  $$
   尾巴直接扔掉，虽然会造成误差，但余项都是比 $x^5$ 高阶的无穷小，因此可以得出：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-    <mi>sin</mi>
-    <mo data-mjx-texclass="NONE">⁡</mo>
-    <mi>x</mi>
-    <mo>≈</mo>
-    <mi>x</mi>
-    <mo>−</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mrow>
-        <mn>3</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mi>x</mi>
-      <mrow>
-        <mn>3</mn>
-      </mrow>
-    </msup>
-    <mo>+</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mrow>
-        <mn>5</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <msup>
-      <mi>x</mi>
-      <mrow>
-        <mn>5</mn>
-      </mrow>
-    </msup>
-  </math>
-  
+  $$
+  \begin{equation}
+  \sin x \approx x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}
+  \end{equation}
+  $$
     <center><font size="2">使用前三项估算</font></center> 
   
   而且，估算造成的误差不会超过：
+  $$
+  \begin{equation}
+  \frac{1}{7 !}|x|^{7}
+  \end{equation}
+  $$
   
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-    <mfrac>
-      <mn>1</mn>
-      <mrow>
-        <mn>7</mn>
-        <mo>!</mo>
-      </mrow>
-    </mfrac>
-    <mrow>
-      <mo stretchy="false">|</mo>
-    </mrow>
-    <mi>x</mi>
-    <msup>
-      <mo stretchy="false">|</mo>
-      <mrow>
-        <mn>7</mn>
-      </mrow>
-    </msup>
-  </math>
-  
-  
-
 - #### 展开的优势
 
   经过这么一番折腾，即使在没有电子计算器的情况下，**我们通过手算加减乘，也可以“控制”结果的精度。**
@@ -475,67 +166,11 @@ tags:
   类似泰勒级数的“拆解”原理，我们可以将一些函数展开成“傅里叶级数”。
 
   比如，可以在一个周期内，将 $x^2$ 展开：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-    <msup>
-      <mi>x</mi>
-      <mrow>
-        <mn>2</mn>
-      </mrow>
-    </msup>
-    <mo>=</mo>
-    <mfrac>
-      <msup>
-        <mi>π</mi>
-        <mrow>
-          <mn>2</mn>
-        </mrow>
-      </msup>
-      <mn>3</mn>
-    </mfrac>
-    <mo>−</mo>
-    <mn>4</mn>
-    <mrow data-mjx-texclass="INNER">
-      <mo data-mjx-texclass="OPEN">(</mo>
-      <mi>cos</mi>
-      <mo data-mjx-texclass="NONE">⁡</mo>
-      <mi>x</mi>
-      <mo>−</mo>
-      <mfrac>
-        <mrow>
-          <mi>cos</mi>
-          <mo data-mjx-texclass="NONE">⁡</mo>
-          <mn>2</mn>
-          <mi>x</mi>
-        </mrow>
-        <msup>
-          <mn>2</mn>
-          <mrow>
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mfrac>
-      <mo>+</mo>
-      <mfrac>
-        <mrow>
-          <mi>cos</mi>
-          <mo data-mjx-texclass="NONE">⁡</mo>
-          <mn>3</mn>
-          <mi>x</mi>
-        </mrow>
-        <msup>
-          <mn>3</mn>
-          <mrow>
-            <mn>2</mn>
-          </mrow>
-        </msup>
-      </mfrac>
-      <mo>−</mo>
-      <mo>⋯</mo>
-      <mo data-mjx-texclass="CLOSE">)</mo>
-    </mrow>
-  </math>
-  
+  $$
+  \begin{equation}
+  x^{2}=\frac{\pi^{2}}{3}-4\left(\cos x-\frac{\cos 2 x}{2^{2}}+\frac{\cos 3 x}{3^{2}}-\cdots\right)
+  \end{equation}
+  $$
   其中 $(-\pi \leq x \leq \pi)$ 
   
   注意，和泰勒展开类似，这里也是“完美的等于“，不是“约等于”。
@@ -547,42 +182,17 @@ tags:
 - #### 三角级数的优势
 
   三角函数 $\sin x$（或 $\cos x$）的微分依然是三角函数：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-    <mo stretchy="false">(</mo>
-    <mi>sin</mi>
-    <mo data-mjx-texclass="NONE">⁡</mo>
-    <mi>x</mi>
-    <msup>
-      <mo stretchy="false">)</mo>
-      <mrow>
-        <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
-      </mrow>
-    </msup>
-    <mo>=</mo>
-    <mi>cos</mi>
-    <mo data-mjx-texclass="NONE">⁡</mo>
-    <mi>x</mi>
-  </math>
-  
+  $$
+  \begin{equation}
+(\sin x)^{\prime}=\cos x
+\end{equation}
+  $$
   积分也依然是三角函数：
-  
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mo data-mjx-texclass="OP">∫</mo>
-  <mi>sin</mi>
-  <mo data-mjx-texclass="NONE">⁡</mo>
-  <mi>x</mi>
-  <mi>d</mi>
-  <mi>x</mi>
-  <mo>=</mo>
-  <mo>−</mo>
-  <mi>cos</mi>
-  <mo data-mjx-texclass="NONE">⁡</mo>
-  <mi>x</mi>
-  <mo>+</mo>
-  <mi>c</mi>
-  </math>
-  
+  $$
+  \begin{equation}
+\int \sin x d x=-\cos x+c
+\end{equation}
+  $$
   在信号分析时，这个特点会带来很大的优势。
 
   **因为，微分和积分运算，只可能改变三角信号的“相位”和“幅度”，而不改变其类型。**
@@ -614,11 +224,4 @@ tags:
   因此，**变换其实就像一个买卖，变换带来的好处更多，那我们就愿意变换，省时省力。**
 
   各种稀奇古怪的方法能流传至今，都是有原因的。
-
-
-
-
-\begin{equation}
-\int \sin x d x=-\cos x+c
-\end{equation}
 
