@@ -104,7 +104,7 @@ tags:
 
   按照三角公式的定义，我们得用量角器画图，然后用直尺测量边长，再计算直角边 $a$ 除以斜边 $c$ 。
 
-  ![aae104b2d6d9ee8e8a2d787d0a57b1a4](https://gitee.com/hawkingwu/PicGo/raw/master/aae104b2d6d9ee8e8a2d787d0a57b1a4.jpg)
+  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/aae104b2d6d9ee8e8a2d787d0a57b1a4.jpg" alt="aae104b2d6d9ee8e8a2d787d0a57b1a4" style="zoom: 75%;" />
 
   这不仅麻烦，而且精度说不清，**谁都不知道我们画的直角到底有多直，这种计算方法根本无法定量评估结果的精度。**
 
@@ -113,30 +113,26 @@ tags:
 - #### 神奇拆解
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
-  $$
-  {\sin x=+\frac{x^{1}}{1 !}-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\frac{x^{7}}{7 !}+\cdots}
-  $$
+
+  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122190652863.png" alt="image-20220122190652863" style="zoom: 20%;" />
 
    <center><font size="2">sinx 的泰勒展开</font></center> 
 
   注意，这里不是约等于，是“完美的”等于，只不过，后面是无穷多项累加。
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
-  $$
-  \sin x=x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}+o\left(x^{5}\right)
-  $$
+
+  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122190837912.png" alt="image-20220122190837912" style="zoom:20%;" />
 
   尾巴直接扔掉，虽然会造成误差，但余项都是比 $x^5$ 高阶的无穷小，因此可以得出：
-  $$
-  \sin x \approx x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}
-  $$
 
-   <center><font size="2">使用前三项估算</font></center> 
+  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122191141217.png" alt="image-20220122191141217" style="zoom:20%;" />
+
+    <center><font size="2">使用前三项估算</font></center> 
 
   而且，估算造成的误差不会超过：
-  $$
-  \frac{1}{7 !}|x|^{7}
-  $$
+
+  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122191332960.png" alt="image-20220122191332960" style="zoom:20%;" />
 
   
 
