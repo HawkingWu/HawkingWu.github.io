@@ -477,64 +477,65 @@ tags:
   比如，可以在一个周期内，将 $x^2$ 展开：
   
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <msup>
-    <mi>x</mi>
-    <mrow data-mjx-texclass="ORD">
-      <mn>2</mn>
-    </mrow>
-  </msup>
-  <mo>=</mo>
-  <mfrac>
     <msup>
-      <mi>&#x3C0;</mi>
-      <mrow data-mjx-texclass="ORD">
+      <mi>x</mi>
+      <mrow>
         <mn>2</mn>
       </mrow>
     </msup>
-    <mn>3</mn>
-  </mfrac>
-  <mo>&#x2212;</mo>
-  <mn>4</mn>
-  <mrow data-mjx-texclass="INNER">
-    <mo data-mjx-texclass="OPEN">(</mo>
-    <mi>cos</mi>
-    <mo data-mjx-texclass="NONE">&#x2061;</mo>
-    <mi>x</mi>
-    <mo>&#x2212;</mo>
+    <mo>=</mo>
     <mfrac>
-      <mrow>
-        <mi>cos</mi>
-        <mo data-mjx-texclass="NONE">&#x2061;</mo>
-        <mn>2</mn>
-        <mi>x</mi>
-      </mrow>
       <msup>
-        <mn>2</mn>
-        <mrow data-mjx-texclass="ORD">
+        <mi>π</mi>
+        <mrow>
           <mn>2</mn>
         </mrow>
       </msup>
+      <mn>3</mn>
     </mfrac>
-    <mo>+</mo>
-    <mfrac>
-      <mrow>
-        <mi>cos</mi>
-        <mo data-mjx-texclass="NONE">&#x2061;</mo>
-        <mn>3</mn>
-        <mi>x</mi>
-      </mrow>
-      <msup>
-        <mn>3</mn>
-        <mrow data-mjx-texclass="ORD">
+    <mo>−</mo>
+    <mn>4</mn>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mi>cos</mi>
+      <mo data-mjx-texclass="NONE">⁡</mo>
+      <mi>x</mi>
+      <mo>−</mo>
+      <mfrac>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">⁡</mo>
           <mn>2</mn>
+          <mi>x</mi>
         </mrow>
-      </msup>
-    </mfrac>
-    <mo>&#x2212;</mo>
-    <mo>&#x22EF;</mo>
-    <mo data-mjx-texclass="CLOSE">)</mo>
-  </mrow>
-
+        <msup>
+          <mn>2</mn>
+          <mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mfrac>
+      <mo>+</mo>
+      <mfrac>
+        <mrow>
+          <mi>cos</mi>
+          <mo data-mjx-texclass="NONE">⁡</mo>
+          <mn>3</mn>
+          <mi>x</mi>
+        </mrow>
+        <msup>
+          <mn>3</mn>
+          <mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mfrac>
+      <mo>−</mo>
+      <mo>⋯</mo>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+  </math>
+  
   其中 $(-\pi \leq x \leq \pi)$ 
   
   注意，和泰勒展开类似，这里也是“完美的等于“，不是“约等于”。
