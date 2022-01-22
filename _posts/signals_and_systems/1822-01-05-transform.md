@@ -475,9 +475,69 @@ tags:
   类似泰勒级数的“拆解”原理，我们可以将一些函数展开成“傅里叶级数”。
 
   比如，可以在一个周期内，将 $x^2$ 展开：
-  $$
-  x^{2}=\frac{\pi^{2}}{3}-4\left(\cos x-\frac{\cos 2 x}{2^{2}}+\frac{\cos 3 x}{3^{2}}-\cdots\right)
-  $$
+
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtext mathcolor="red">\u</mtext>
+  <mn>32</mn>
+  <mi>E</mi>
+  <msup>
+    <mi>x</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <mo>=</mo>
+  <mfrac>
+    <msup>
+      <mi>&#x3C0;</mi>
+      <mrow data-mjx-texclass="ORD">
+        <mn>2</mn>
+      </mrow>
+    </msup>
+    <mn>3</mn>
+  </mfrac>
+  <mo>&#x2212;</mo>
+  <mn>4</mn>
+  <mrow data-mjx-texclass="INNER">
+    <mo data-mjx-texclass="OPEN">(</mo>
+    <mi>cos</mi>
+    <mo data-mjx-texclass="NONE">&#x2061;</mo>
+    <mi>x</mi>
+    <mo>&#x2212;</mo>
+    <mfrac>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mn>2</mn>
+        <mi>x</mi>
+      </mrow>
+      <msup>
+        <mn>2</mn>
+        <mrow data-mjx-texclass="ORD">
+          <mn>2</mn>
+        </mrow>
+      </msup>
+    </mfrac>
+    <mo>+</mo>
+    <mfrac>
+      <mrow>
+        <mi>cos</mi>
+        <mo data-mjx-texclass="NONE">&#x2061;</mo>
+        <mn>3</mn>
+        <mi>x</mi>
+      </mrow>
+      <msup>
+        <mn>3</mn>
+        <mrow data-mjx-texclass="ORD">
+          <mn>2</mn>
+        </mrow>
+      </msup>
+    </mfrac>
+    <mo>&#x2212;</mo>
+    <mo>&#x22EF;</mo>
+    <mo data-mjx-texclass="CLOSE">)</mo>
+  </mrow>
+  </math>
 
   其中 $(-\pi \leq x \leq \pi)$ 
 
