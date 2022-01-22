@@ -87,7 +87,7 @@ tags:
 - #### 泰勒级数
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>f</mi>
     <mo stretchy="false">(</mo>
@@ -250,9 +250,9 @@ tags:
     <mi>x</mi>
     <mo stretchy="false">)</mo>
   </math>
-
+  
    <center><font size="2">泰勒公式</font></center> 
-
+  
   它好像是无缘无故突然从石头缝里蹦出来的一个概念，但真相完全不是这样。
 
   
@@ -274,7 +274,7 @@ tags:
 - #### 神奇拆解
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>sin</mi>
     <mo data-mjx-texclass="NONE">⁡</mo>
@@ -335,13 +335,13 @@ tags:
     <mo>+</mo>
     <mo>⋯</mo>
   </math>
-
+  
    <center><font size="2">sinx 的泰勒展开</font></center> 
 
   注意，这里不是约等于，是“完美的”等于，只不过，后面是无穷多项累加。
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mi>sin</mi>
     <mo data-mjx-texclass="NONE">⁡</mo>
@@ -389,9 +389,9 @@ tags:
       <mo data-mjx-texclass="CLOSE">)</mo>
     </mrow>
   </math>
-
+  
   尾巴直接扔掉，虽然会造成误差，但余项都是比 $x^5$ 高阶的无穷小，因此可以得出：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mi>sin</mi>
     <mo data-mjx-texclass="NONE">⁡</mo>
@@ -427,11 +427,11 @@ tags:
       </mrow>
     </msup>
   </math>
-
+  
     <center><font size="2">使用前三项估算</font></center> 
-
+  
   而且，估算造成的误差不会超过：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mfrac>
       <mn>1</mn>
@@ -451,7 +451,7 @@ tags:
       </mrow>
     </msup>
   </math>
-
+  
   
 
 - #### 展开的优势
@@ -547,7 +547,7 @@ tags:
 - #### 三角级数的优势
 
   三角函数 $\sin x$（或 $\cos x$）的微分依然是三角函数：
-
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
     <mo stretchy="false">(</mo>
     <mi>sin</mi>
@@ -564,8 +564,9 @@ tags:
     <mo data-mjx-texclass="NONE">⁡</mo>
     <mi>x</mi>
   </math>
-
+  
   积分也依然是三角函数：
+  
   <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mo data-mjx-texclass="OP">∫</mo>
   <mi>sin</mi>
@@ -580,7 +581,8 @@ tags:
   <mi>x</mi>
   <mo>+</mo>
   <mi>c</mi>
-</math>
+  </math>
+  
   在信号分析时，这个特点会带来很大的优势。
 
   **因为，微分和积分运算，只可能改变三角信号的“相位”和“幅度”，而不改变其类型。**
