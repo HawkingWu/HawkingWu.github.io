@@ -88,7 +88,168 @@ tags:
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
 
-  ![image-20220122185650594](https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122185650594.png)
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>f</mi>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mrow>
+              <mn>0</mn>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mn>0</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mfrac>
+      <mrow>
+        <msup>
+          <mi>f</mi>
+          <mrow>
+            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
+          </mrow>
+        </msup>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mrow>
+              <mn>0</mn>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <mi>x</mi>
+      <mo>−</mo>
+      <msub>
+        <mi>x</mi>
+        <mrow>
+          <mn>0</mn>
+        </mrow>
+      </msub>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+    <mo>+</mo>
+    <mfrac>
+      <mrow>
+        <msup>
+          <mi>f</mi>
+          <mrow>
+            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
+            <mi data-mjx-alternate="1" mathvariant="normal">′</mi>
+          </mrow>
+        </msup>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mrow>
+              <mn>0</mn>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mrow data-mjx-texclass="INNER">
+        <mo data-mjx-texclass="OPEN">(</mo>
+        <mi>x</mi>
+        <mo>−</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow>
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo data-mjx-texclass="CLOSE">)</mo>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+      </mrow>
+    </msup>
+    <mo>+</mo>
+    <mo>…</mo>
+    <mo>+</mo>
+    <mfrac>
+      <mrow>
+        <msup>
+          <mi>f</mi>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mi>n</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </msup>
+        <mrow data-mjx-texclass="INNER">
+          <mo data-mjx-texclass="OPEN">(</mo>
+          <msub>
+            <mi>x</mi>
+            <mrow>
+              <mn>0</mn>
+            </mrow>
+          </msub>
+          <mo data-mjx-texclass="CLOSE">)</mo>
+        </mrow>
+      </mrow>
+      <mrow>
+        <mi>n</mi>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mrow data-mjx-texclass="INNER">
+        <mo data-mjx-texclass="OPEN">(</mo>
+        <mi>x</mi>
+        <mo>−</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow>
+            <mn>0</mn>
+          </mrow>
+        </msub>
+        <mo data-mjx-texclass="CLOSE">)</mo>
+      </mrow>
+      <mrow>
+        <mi>n</mi>
+      </mrow>
+    </msup>
+    <mo>+</mo>
+    <msub>
+      <mi>R</mi>
+      <mrow>
+        <mi>n</mi>
+      </mrow>
+    </msub>
+    <mo stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo stretchy="false">)</mo>
+  </math>
 
    <center><font size="2">泰勒公式</font></center> 
 
@@ -114,7 +275,66 @@ tags:
 
   现在，有了泰勒展开公式，我们可以直接将 $\sin x$ 拆**“解成一堆”**关于 $x$ 的加减乘除运算（ $x$ 使用弧度）：
 
-  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122190652863.png" alt="image-20220122190652863" style="zoom: 20%;" />
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>sin</mi>
+    <mo data-mjx-texclass="NONE">⁡</mo>
+    <mi>x</mi>
+    <mo>=</mo>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mrow>
+          <mn>1</mn>
+        </mrow>
+      </msup>
+      <mrow>
+        <mn>1</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>−</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mrow>
+          <mn>3</mn>
+        </mrow>
+      </msup>
+      <mrow>
+        <mn>3</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mrow>
+          <mn>5</mn>
+        </mrow>
+      </msup>
+      <mrow>
+        <mn>5</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>−</mo>
+    <mfrac>
+      <msup>
+        <mi>x</mi>
+        <mrow>
+          <mn>7</mn>
+        </mrow>
+      </msup>
+      <mrow>
+        <mn>7</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <mo>+</mo>
+    <mo>⋯</mo>
+  </math>
 
    <center><font size="2">sinx 的泰勒展开</font></center> 
 
@@ -122,11 +342,91 @@ tags:
 
   但是，我们也不需计算无穷多项，因为，**后面的高次项对于结果的“贡献”越来越小，**因此，我们往往只需计算前若干项即可，比如前三项：
 
-  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122190837912.png" alt="image-20220122190837912" style="zoom:20%;" />
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>sin</mi>
+    <mo data-mjx-texclass="NONE">⁡</mo>
+    <mi>x</mi>
+    <mo>=</mo>
+    <mi>x</mi>
+    <mo>−</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mrow>
+        <mn>3</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mi>x</mi>
+      <mrow>
+        <mn>3</mn>
+      </mrow>
+    </msup>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mrow>
+        <mn>5</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mi>x</mi>
+      <mrow>
+        <mn>5</mn>
+      </mrow>
+    </msup>
+    <mo>+</mo>
+    <mi>o</mi>
+    <mrow data-mjx-texclass="INNER">
+      <mo data-mjx-texclass="OPEN">(</mo>
+      <msup>
+        <mi>x</mi>
+        <mrow>
+          <mn>5</mn>
+        </mrow>
+      </msup>
+      <mo data-mjx-texclass="CLOSE">)</mo>
+    </mrow>
+  </math>
 
   尾巴直接扔掉，虽然会造成误差，但余项都是比 $x^5$ 高阶的无穷小，因此可以得出：
 
-  <img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20220122191141217.png" alt="image-20220122191141217" style="zoom:20%;" />
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>sin</mi>
+    <mo data-mjx-texclass="NONE">⁡</mo>
+    <mi>x</mi>
+    <mo>≈</mo>
+    <mi>x</mi>
+    <mo>−</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mrow>
+        <mn>3</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mi>x</mi>
+      <mrow>
+        <mn>3</mn>
+      </mrow>
+    </msup>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mrow>
+        <mn>5</mn>
+        <mo>!</mo>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mi>x</mi>
+      <mrow>
+        <mn>5</mn>
+      </mrow>
+    </msup>
+  </math>
 
     <center><font size="2">使用前三项估算</font></center> 
 
