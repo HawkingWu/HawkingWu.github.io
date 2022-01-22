@@ -88,7 +88,7 @@ tags:
 
   在高等数学教科书上，“泰勒公式”不仅看起来吓人，而且来得非常突然，
 
-  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>f</mi>
     <mo stretchy="false">(</mo>
     <mi>x</mi>
