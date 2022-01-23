@@ -110,12 +110,14 @@ tags:
   因为，对于 $(4)$ 式所描述的**复数形式**，实际上是将信号拆解成**复指数的加权和，而不是实三角波的和。**
 
   被拆出来的某频率的一个**正的**复指数与一个**负的**复指数, 可以**合成出一个实三角波 ，**即：
+  
   $$
   \begin{aligned}
   F_{n} e^{j n \Omega_{0} t}+F_{-n} e^{-j n \Omega_{0} t} &=\left|F_{n}\right|\left[e^{j\left(\varphi_{n}+n \Omega_{0} t\right)}+e^{-j\left(\varphi_{n}+n \Omega_{0} t\right)}\right] \\
   &=2\left|F_{n}\right| \cos \left(n \Omega_{0} t+\varphi_{n}\right)
   \end{aligned}
   $$
+  
   这样一来，本质上，**我们其实还是在用正弦波表示原函数 $f(t)$ 。**
 
   因此，**单一出现的负频率本身没有物理意义，**同一频率 $n \Omega_{0}$ 下，正负频率总是共轭出现的，一正一负只是**正弦波的另一种数学表现形式。**
