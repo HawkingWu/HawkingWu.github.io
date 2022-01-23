@@ -44,9 +44,11 @@ tags:
 
   用数学语言描述就是：
   
+  $$
   \begin{equation}
   f(t)=B+\sum_{n=1}^{\infty} A_{n} \cos \left(n \Omega_{0} t+\varphi_{n}\right) \tag{1}
   \end{equation}
+  $$
   
 
   这里的 $\Omega_{0}$ 并非变量，是一个常数，即“基频”。
@@ -61,15 +63,19 @@ tags:
 
   但是， $(1)$ 式看上去过于复杂，不够简洁，因此，我们采用欧拉公式：
   
+  $$
   \begin{equation}
   e^{i \theta}=\cos \theta+i \cdot \sin \theta
   \end{equation}
+  $$
   
   将**实正弦波**形式的 $(1)$ 式，转换成**复指数**形式的 $(2)$ 式（推导过程略）：
   
+  $$
   \begin{equation}
   f(t)=\sum_{n=-\infty}^{\infty} \frac{1}{2} \cdot A_{n} \cdot e^{j \varphi_{n}} \cdot e^{j n \Omega_{0} t} \tag{2}
   \end{equation}
+  $$
   
   这看起来整洁多了。
 
@@ -85,15 +91,19 @@ tags:
 
   总之，历史再复杂，结论很简单。即，我们可以计算出 $(2)$ 式的系数：
   
+  $$
   \begin{equation}
   \frac{1}{2} \cdot A_{n} \cdot e^{j \varphi_{n}}=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t)\left[\cos \left(n \Omega_{0} t\right)-j \sin \left(n \Omega_{0} t\right)\right] dt \tag{3}
   \end{equation}
+  $$
   
   我们将这个系数记作 $Fn$ ：
   
+  $$
   \begin{equation}
   f(t)=\sum_{n=-\infty}^{\infty} F_{n} \cdot e^{j n \Omega_{0} t} \tag{4}
   \end{equation}
+  $$
   
   显然，系数 $F_n$ 与原函数 $f(t)$ 有密切的关系， $(4)$ 式称为**傅里叶级数的复数形式，**它表示：
 
