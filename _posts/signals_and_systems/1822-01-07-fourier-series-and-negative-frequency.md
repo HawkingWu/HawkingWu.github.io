@@ -43,11 +43,11 @@ tags:
   > $f(t)$ = 第一个正弦波 + 第二个正弦波 + ······ + 第n个正弦波 + ······
 
   用数学语言描述就是：
-  $$
+  
   \begin{equation}
   f(t)=B+\sum_{n=1}^{\infty} A_{n} \cos \left(n \Omega_{0} t+\varphi_{n}\right) \tag{1}
   \end{equation}
-  $$
+  
 
   这里的 $\Omega_{0}$ 并非变量，是一个常数，即“基频”。
 
@@ -60,17 +60,17 @@ tags:
   ![92cec08f301ae922c0cb666aac311c29](https://gitee.com/hawkingwu/PicGo/raw/master/92cec08f301ae922c0cb666aac311c29.jpg)
 
   但是， $(1)$ 式看上去过于复杂，不够简洁，因此，我们采用欧拉公式：
-  $$
+  
   \begin{equation}
   e^{i \theta}=\cos \theta+i \cdot \sin \theta
   \end{equation}
-  $$
+  
   将**实正弦波**形式的 $(1)$ 式，转换成**复指数**形式的 $(2)$ 式（推导过程略）：
-  $$
+  
   \begin{equation}
   f(t)=\sum_{n=-\infty}^{\infty} \frac{1}{2} \cdot A_{n} \cdot e^{j \varphi_{n}} \cdot e^{j n \Omega_{0} t} \tag{2}
   \end{equation}
-  $$
+  
   这看起来整洁多了。
 
   但现在有一个根本问题：
@@ -84,22 +84,24 @@ tags:
   关于这段历史，请看专栏的视频节目**“如何理解傅里叶变换？从人文角度再看哲学家傅里叶”。**
 
   总之，历史再复杂，结论很简单。即，我们可以计算出 $(2)$ 式的系数：
-  $$
+  
   \begin{equation}
   \frac{1}{2} \cdot A_{n} \cdot e^{j \varphi_{n}}=\frac{1}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t)\left[\cos \left(n \Omega_{0} t\right)-j \sin \left(n \Omega_{0} t\right)\right] dt \tag{3}
   \end{equation}
-  $$
+  
   我们将这个系数记作 $Fn$ ：
-  $$
+  
   \begin{equation}
   f(t)=\sum_{n=-\infty}^{\infty} F_{n} \cdot e^{j n \Omega_{0} t} \tag{4}
   \end{equation}
-  $$
+  
   显然，系数 $F_n$ 与原函数 $f(t)$ 有密切的关系， $(4)$ 式称为**傅里叶级数的复数形式，**它表示：
 
   > 任意周期信号，可以分解为许多**不同频率的复指数的加权和。**
-
+  
   所谓不同频率，就是，随着 $n$ 的变化， $n \Omega_{0}$ 也逐渐变大，频率也因此逐渐变大。其中， $F_{n}$ 的模值 $|\mathrm{Fn}|$ ，就是**加权系数**（注意，此时积分上下限已经变成了 $\infty$ ）。
+
+  
 
 - #### 为什么有负频率
 
@@ -108,12 +110,12 @@ tags:
   因为，对于 $(4)$ 式所描述的**复数形式**，实际上是将信号拆解成**复指数的加权和，而不是实三角波的和。**
 
   被拆出来的某频率的一个**正的**复指数与一个**负的**复指数, 可以**合成出一个实三角波 ，**即：
-  $$
+  
   \begin{aligned}
   F_{n} e^{j n \Omega_{0} t}+F_{-n} e^{-j n \Omega_{0} t} &=\left|F_{n}\right|\left[e^{j\left(\varphi_{n}+n \Omega_{0} t\right)}+e^{-j\left(\varphi_{n}+n \Omega_{0} t\right)}\right] \\
   &=2\left|F_{n}\right| \cos \left(n \Omega_{0} t+\varphi_{n}\right)
   \end{aligned}
-  $$
+  
   这样一来，本质上，**我们其实还是在用正弦波表示原函数 $f(t)$ 。**
 
   因此，**单一出现的负频率本身没有物理意义，**同一频率 $n \Omega_{0}$ 下，正负频率总是共轭出现的，一正一负只是**正弦波的另一种数学表现形式。**
