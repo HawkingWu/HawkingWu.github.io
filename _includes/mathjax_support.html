@@ -10,11 +10,16 @@
       scale: 90
     },
 */
+    jax: ["input/TeX", "output/HTML-CSS"],  //新增加改为 HTML-CSS 渲染
     tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      displayMath: [ ['$$','$$'] ],
+//      inlineMath: [ ['$','$'] ],
+//      displayMath: [ ['$$','$$'] ],
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+
       processEscapes: true,
-    }
+    },
+    "HTML-CSS": { fonts: ["TeX"] },
   });
 </script>
 <!-- <script type="text/javascript"
