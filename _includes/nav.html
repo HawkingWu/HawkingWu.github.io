@@ -20,15 +20,15 @@
             <div id="huxblog_navbar">
                 <div class="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="{{ site.baseurl }}/">Home</a>
-                        </li>
                         <!-- 添加标签就像下面这样写 -->
                         <li>
-                            <a href="https://hawkingwu.vercel.app/">加速访问</a>
+                            <a href="https://hawkingwu.vercel.app/">【加速访问】</a>
                           <!-- 改成上面在新的页面打开 <a href="https://shop123121737.taobao.com">SHOP</a>  -->
                         </li>
                         <!-- 添加标签就像上面这样写 -->
+                        <li>
+                            <a href="{{ site.baseurl }}/">Home</a>
+                        </li>
                         {% for page in site.pages %}
                         {% if page.title and page.hide-in-nav != true %}
                         <li>
