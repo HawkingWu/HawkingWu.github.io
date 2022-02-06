@@ -17,11 +17,8 @@ tags:
 #### 示例
 
     索引
-
       <a href="#tag1">第一段</a>
-
       <a href="#tag2">第二段</a>
-
       <a href="#tag3">第三段</a>
 
     <a name="tag1">第一段</a>
@@ -41,16 +38,16 @@ tags:
 #### 示例源码
 
 ```markdown
-  索引
-    <a href="#tag1">第一段</a>
-    <a href="#tag2">第二段</a>
-    <a href="#tag3">第三段</a>
-    
-    <a name="tag1">第一段</a>
-      正文......
-    <a name="tag2">第二段</a>
-      正文......
-    <a name="tag3">第三段</a>
+索引
+  <a href="#tag1">第一段</a>
+  <a href="#tag2">第二段</a>
+  <a href="#tag3">第三段</a>
+  
+  <a name="tag1">第一段</a>
+    正文......
+  <a name="tag2">第二段</a>
+    正文......
+  <a name="tag3">第三段</a>
       正文......
 ```
 
