@@ -53,7 +53,7 @@ APlayer ↓
                   preload: 'auto',
                   volume: 0.7,
                   mutex: true,
-                  listFolded: true, //无法快进，折叠
+                  listFolded: false,
                   listMaxHeight: 90,
                   audio: [
                       {
@@ -327,7 +327,7 @@ APlayer ↓
     <script>
         var ap2 = new APlayer
                 ({
-                  container: document.getElementById('player1'),
+                  container: document.getElementById('player2'),
                   mini: false,
                   autoplay: false,
                   theme: '#FADFA3',
@@ -607,7 +607,7 @@ APlayer ↓
     <script>
         var ap3 = new APlayer
                 ({
-                  container: document.getElementById('player2'),
+                  container: document.getElementById('player3'),
                   mini: false,
                   autoplay: false,
                   theme: '#FADFA3',
