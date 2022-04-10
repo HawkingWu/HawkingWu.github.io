@@ -11,7 +11,7 @@ tags:
   - PCB一板成功
 ---
 
-![image-20210330214021204](https://gitee.com/hawkingwu/PicGo/raw/master/image-20210330214021204.png)
+![https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E7%94%A8%E6%B0%B4%E6%B5%81%E6%AF%94%E4%BD%9C%E7%94%B5%E6%B5%81.webp](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E7%94%A8%E6%B0%B4%E6%B5%81%E6%AF%94%E4%BD%9C%E7%94%B5%E6%B5%81.webp)
 
 还记得我们初中物理课上老师把电流类比为水流的这张图吗？上图中的泵A使水在恒定压力P1下绕着一个闭合回路运动。只要阀门B保持开启或至少部分开启的状态，在管道中流动的水就会达到稳定的速度V1。泵的压力、水的粘度以及回路中使用的管道、阀门和弯头的有效流体流动阻力决定了这个速度。这也类似于一个简单的电路回路，老师在课上做实验时会拿出一个电池、一个电阻、以及一些导线组成一个简单的回路。电池类似于水箱，电池产生的静电压与泵头的水压相对应。导线中电流的循环与管道中水的循环相对应。
 
@@ -19,9 +19,9 @@ tags:
 
 但到了大学物理，学习了电磁学之后，同样是电池、电阻和导线组成的电路则表示成：
 
-![img](https://gitee.com/hawkingwu/PicGo/raw/master/Poynting_vectors_of_DC_circuit.svg.png)
+![https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/Poynting_vectors_of_DC_circuit.svg.webp](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/Poynting_vectors_of_DC_circuit.svg.webp)
 
-![image-20210330214121342](https://gitee.com/hawkingwu/PicGo/raw/master/image-20210330214121342.png)
+![https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%9D%A1%E5%8D%B0%E5%BB%B7%E7%9F%A2%E9%87%8F.webp](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%9D%A1%E5%8D%B0%E5%BB%B7%E7%9F%A2%E9%87%8F.webp)
 
 在电路理论中，认为是用导体来运输能量，这在采用集总参数为核心思想的电路理论中是正确的。
 
@@ -103,11 +103,11 @@ const dp = new DPlayer({
 
 比如我们画原理图，我们需要把复杂问题简化成原理图符号，以电路理论描述电路的组成结构和基本性能。
 
-![image-20210330214247926](https://gitee.com/hawkingwu/PicGo/raw/master/image-20210330214247926.png)
+![https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%8E%9F%E7%90%86%E5%9B%BE.webp](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%8E%9F%E7%90%86%E5%9B%BE.webp)
 
 但原理图开始转换到PCB上，也即我们Layout时，我们要意识到这是一种简化。
 
-![image-20210330214323567](https://gitee.com/hawkingwu/PicGo/raw/master/image-20210330214323567.png)
+![https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%AE%9E%E9%99%85PCB%E4%BF%A1%E5%8F%B7.webp](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E5%AE%9E%E9%99%85PCB%E4%BF%A1%E5%8F%B7.webp)
 
 在低频时，PCB上的互联线可以看成是透明的，可以等价为原理图上的连接关系，使用电路的分析方法来解决问题。但在足够高的频率下，元件会失去其简单的电路特性。
 
