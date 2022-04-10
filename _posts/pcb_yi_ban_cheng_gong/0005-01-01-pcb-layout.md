@@ -1,6 +1,6 @@
 ---
-title: "PCB设计拉线到底拉的是什么"
-subtitle: "PCB设计一板即成功专栏"
+title: "2.1 PCB设计拉线到底拉的是什么"
+subtitle: "第二章 PCB设计必知必会的概念"
 layout: post
 date:   2021-01-01
 author: "Huanqing"
@@ -130,6 +130,3 @@ const dp = new DPlayer({
 
 <a href="https://www.mr-wu.cn/wp-content/uploads/2021/01/由基尔霍夫定律看电磁场理论与电路理论的关系.pdf" target="_blank">由基尔霍夫定律看电磁场理论与电路理论的关系.pdf 318.84 KB</a>
 
-[]()
-
-[← 上一个](https://www.mr-wu.cn/courses/right-the-first-time-for-high-speed-pcb-design/lesson/信号完整性的历史（黑魔法开始出现）/) [继续 →](https://www.mr-wu.cn/courses/right-the-first-time-for-high-speed-pcb-design/lesson/高频？高速？更要关注带宽！/)
