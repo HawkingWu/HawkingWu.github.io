@@ -1,6 +1,6 @@
 ---
 title: "PCB的发展历史"
-subtitle: "PCB设计一板即成功专栏"
+subtitle: "第一章 PCB相关的发展历史"
 layout: post
 date:   2021-01-01
 author: "Huanqing"
