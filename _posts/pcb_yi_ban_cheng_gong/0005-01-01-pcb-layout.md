@@ -32,6 +32,7 @@ tags:
 而真实世界的情形是，导体本身是不能传输和存储能量的。能量存储在场中，也通过场来传输能量，而导体只是为能量流动路径提供了方向指引。
 
 
+
 <link href="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.css" rel="stylesheet">
 <div id="dplayer"></div>
 <script src="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js"></script>
@@ -49,7 +50,6 @@ const dp = new DPlayer({
     screenshot: true,
     hotkey: true,
     preload: 'auto',
-    logo: logopng,
     volume: 0.7,
     mutex: true,
     video: {
