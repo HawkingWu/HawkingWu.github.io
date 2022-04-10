@@ -1,6 +1,6 @@
 ---
 title: "信号完整性的历史（黑魔法开始出现）"
-subtitle: "PCB设计一板即成功专栏"
+subtitle: "第一章 PCB相关的发展历史"
 layout: post
 date:   2021-01-01
 author: "Huanqing"
@@ -60,7 +60,7 @@ const dp = new DPlayer({
 
 [![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/1858年跨大西洋电缆路线图.jpg)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/1858年跨大西洋电缆路线图.jpg)
 
-1858年跨大西洋电缆路线图
+<center> 1858年跨大西洋电缆路线图 </center>
 
 跨大西洋电缆的长度非常长，好几千公里，而电子产品上的互联线虽然短，但随着信号上升/下降沿时间变短，也遇到了信号完整性问题。
 
@@ -70,7 +70,7 @@ const dp = new DPlayer({
 
 然而，潜意识里认为只要把线拉通就行的工程师们仍然沿用着为标准TTL开发的布线规则。信号传输的时间延迟和传输线效应都没有进行考虑。人们想不明白，明明就是一条铜箔导线而已，怎么就冒出来看不见摸不着的电阻、电感和电容来，这简直就是有人要害朕，施展了深不可测的黑魔法！
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/黑魔法.png)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/黑魔法.png)
+![[黑魔法.webp (1200×1078) (mr-wu.cn)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/黑魔法.webp)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E9%BB%91%E9%AD%94%E6%B3%95.jpg)
 
 更玄学的是，由于74系列封装一样，通过尾标来区分标准TTL还是高速或者低功耗TTL、可能是管理疏忽或者装配人员看错型号，用高速TTL器件替换了标准TTL器件，本来已经大规模量产的稳定产品开始出现大面积的不稳定状况，百思不得其姐，莫非被友商施展了黑魔法不成？
 
