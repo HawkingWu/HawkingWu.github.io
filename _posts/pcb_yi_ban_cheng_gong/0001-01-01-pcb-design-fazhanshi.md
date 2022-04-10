@@ -1,5 +1,5 @@
 ---
-title: "PCB的发展历史"
+title: "1.1 PCB的发展历史"
 subtitle: "第一章 PCB相关的发展历史"
 layout: post
 date:   2021-01-01
