@@ -11,102 +11,64 @@ tags:
   - PCB一板成功
 ---
 
-也许历史上第一次遇到信号完整性问题的应该是在始于1854年的跨大西洋电报项目，该项目于1858年完成了海底电缆的铺设。电缆铺设完工之后，要举行一个庆典仪式，也即由英国的维多利亚女王通过跨大西洋电报向美国总统布坎南发出欢迎信。遗憾的是，信号完整性问题导致女王的99个字的欢迎致辞需要近17个小时的时间来传输，而不是预期的几分钟。信号完整性问题使跨大西洋电报电缆传输速度降低到了几乎无法使用的速度。为了尝试解决这个问题，次月， 怀尔德曼·怀特豪斯向电缆施加了过高电压，同时试图实现更快的运行速度时，电缆被毁了，该项目仅仅运行了三个星期就宣告失败。
+一般的PCB成品板厚的常规厚度是0.8mm到1.6.mm之间这个规格，而更常见的板厚规格默认是按公制单位1.6 mm (英制单位约为63mil)来设计的，很多接插件的标准也按照1.6mm这个规格来适配，那1.6mm这个厚度标准是怎样来的呢？
 
-<link href="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.css" rel="stylesheet">
-<div id="dplayer"></div>
-<script src="https://cdn.bootcss.com/dplayer/1.25.0/DPlayer.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
-<script>
-var url1="https://files.catbox.moe/c9awxa.mp4";    //这里填写视频地址
-var pic1="https://files.catbox.moe/tmg0nm.jpg";   //这里填写预览图片地址
-var logopng="https://gitee.com/hawkingwu/PicGo/raw/master/linearroglogo_l.png";  //logo
-var id=md5(url1);
-const dp = new DPlayer({
-    container: document.getElementById('dplayer'),
-    autoplay: false,
-    theme: '#FADFA3',
-    loop: true,
-    lang: 'zh-cn',
-    screenshot: true,
-    hotkey: true,
-    preload: 'auto',
-    logo: logopng,
-    volume: 0.7,
-    mutex: true,
-    video: {
-        url: url1,
-        pic: pic1,
-        thumbnails: pic1,
-        type: 'auto',
-    },
-    contextmenu: [
-        {
-            text: 'custom1',
-            link: 'https://huanqingwu.github.io/',
-        },
-        {
-            text: 'custom2',
-            click: (player) => {
-                console.log(player);
-            },
-        },
-    ],
+通过[《PCB的发展历史》](https://hawkingwu.github.io/2021/01/01/pcb-design-fazhanshi/)章节我们了解到，在电子管时代，PCB产业还处于萌芽阶段，由于电子管元件发热量大，体积笨重，不方便在印刷电路板上进行安装(需要一定的机械强度)，当时的电子产品的生产制造基本上是手工搭棚安装，当然，这也与PCB的基板材料的发展有关，作为PCB基材的环氧树脂（详见专栏的[PCB基材之树脂](https://www.mr-wu.cn/courses/right-the-first-time-for-high-speed-pcb-design/lesson/pcb基材之树脂/)这一章节）、[PCB基材之增强材料](https://www.mr-wu.cn/courses/right-the-first-time-for-high-speed-pcb-design/lesson/pcb基材之增强材料/)、铜箔等制造技术还未有实现商业化生产。
 
-});
-</script>
+![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/10/IBM-Vacuum-Tube-Computer.jpeg)
 
-1865年人们对跨大西洋电报项目进行了第二次尝试，使用了大大改进的材料，并在遇到一些挫折之后，完成了连接并于1866年7月28日投入使用。这次电缆的制造方法以及发送消息的方法已得到了极大的改进。 1866年铺设的电缆每分钟可以传输8个字——比1858电缆快80倍。 奥利弗·亥维赛和米海洛·卜平在随后的几十年中了解到，电缆的带宽会受到电容性电抗和电感性电抗之间的不平衡的阻碍，从而导致严重的色散 ，进而导致信号失真。
+在20世纪20年代，电路开发人员使用电木（酚醛树脂）、石膏板、硬纸板，甚至是薄木片建造电路板（形式类似于洞洞板或者面包板，有别于印刷电路板）。他们在材料上钻孔，然后用铆钉或螺栓将扁平的铜线固定在电路板上形成互联电路。
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/1858年跨大西洋电缆路线图.jpg)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/1858年跨大西洋电缆路线图.jpg)
+![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/10/1920-%E5%B9%B4%E4%BB%A3%E7%94%B1-Signal-%E5%88%B6%E9%80%A0%E7%9A%84TRF%E6%94%B6%E9%9F%B3%E6%9C%BA%E6%98%AF%E5%9C%A8%E6%9C%A8%E5%88%B6%E9%9D%A2%E5%8C%85%E6%9D%BF%E4%B8%8A%E5%BB%BA%E9%80%A0%E7%9A%84.jpeg)
 
-<center> 1858年跨大西洋电缆路线图 </center>
+1920 年代由 Signal 制造的TRF收音机是在木制面包板上建造的
 
-跨大西洋电缆的长度非常长，好几千公里，而电子产品上的互联线虽然短，但随着信号上升/下降沿时间变短，也遇到了信号完整性问题。
+其中，电木也即酚醛树脂，由德国化学家阿道夫·冯·拜尔（1835年－1917年）于1872年首次合成。1907年，出生于比利时的美国化学家利奥·亨德里克·贝克兰（1863年－1944年）改进了酚醛树脂的生产技术，将树脂实用化、工业化。1910年，他建立通用贝克莱特公司（General Bakelite），并用根据自己的名字赋予酚醛树脂商标名“Bakelite”。
 
-随着ASTTL(**A**dvanced **S**chottky **T**ransistor **T**ransistor **L**ogic)的出现，信号完整性问题开始出现。ASTTL比标准TTL快得多。上升时间降到了2纳秒，栅极延迟降到了6纳秒，时钟周期来到了100MHz–这已经非常快了! 这也即有些书上描述的，时钟周期高于100MHz就视为高速的缘由吧。
+20世纪初，依靠贝克兰的酚醛树脂制造专利，在德国、英国、法国和日本等国家，先后实现了酚醛树脂的工业化生产。酚醛树脂也开始广泛用于收音机的旋钮、转盘、安装元器件的电路板（非印刷电路板），甚至收音机的产品外壳等。
 
-**不过它真正的原因是信号上升时间降到了2纳秒**，我们所需要关注的频率为0.35/2ns，也即175MHz，换算为FR4上的1/10波长电尺寸约为：8.57 cm！这个尺寸已经接近甚至要小于实际产品的电路板尺寸了！这时候互联线已经不能再视为“透明”！
+1921年，Formica（富美家）公司制造的层压板已被整合到家用收音机和船用收音机的制造中，1927年，Formica公司发现通过平版印刷工艺添加装饰纸，他们的层压板可以制成模拟木纹和大理石的图案。随着层压板变得更加丰富多彩和具有装饰性，其市场迅速扩大，当时很多工作台都采用酚醛层压板作为台面表层的装饰面板。
 
-然而，潜意识里认为只要把线拉通就行的工程师们仍然沿用着为标准TTL开发的布线规则。信号传输的时间延迟和传输线效应都没有进行考虑。人们想不明白，明明就是一条铜箔导线而已，怎么就冒出来看不见摸不着的电阻、电感和电容来，这简直就是有人要害朕，施展了深不可测的黑魔法！
+![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/10/1931-formica-group-invent-cigarette-proof-laminate-920x600-1.jpeg)
 
-![[黑魔法.webp (1200×1078) (mr-wu.cn)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/黑魔法.webp)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/%E9%BB%91%E9%AD%94%E6%B3%95.jpg)
+酚醛层压板是一种坚固且良好绝缘的高分子材料，具有耐热、防水、耐化学性和可承受大电流的特性，虽然其不是专门作为电路板用途而开发的，更广泛的应用于装饰性面板用途，但酚醛层压板无论是钻孔性能或者作为电子管的安装支撑，其强度相对于石膏板、硬纸板，或者是薄木片都要好很多，选用酚醛层压板替代硬纸板或者薄木板作为电路板是自然而然的事情。
 
-更玄学的是，由于74系列封装一样，通过尾标来区分标准TTL还是高速或者低功耗TTL、可能是管理疏忽或者装配人员看错型号，用高速TTL器件替换了标准TTL器件，本来已经大规模量产的稳定产品开始出现大面积的不稳定状况，百思不得其姐，莫非被友商施展了黑魔法不成？
+但在酚醛层压板上打孔然后接线将所有电子元件连接在一起依然是一件非常费力的事情，比玩洞洞板还要费劲，毕竟洞洞板还预先打好了孔。没过多久，有人就想出了一种方法，把一张铜箔粘在酚醛层压板上，然后把元件之间的互联线路蚀刻在铜箔上（1913年，英国的Berry发明了采用抗蚀剂涂敷在金属箔上，再进行蚀刻没有涂敷部分，从而形成导电图形的技术），这就制成了一个单面印刷电路板。很快，多个电路板之间的互联系统的发展产生了对板对板连接器的相关的需求。
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/74-TTL-系列.jpg)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/74-TTL-系列.jpg)
+而1/16英寸或63mil，则是当时酚醛层压板的生产厚度，板对板连接器自然也是按照1/16英寸（约63mil或者1.6mm）的板厚进行设计的，这就形成了配套的产业链，1/16英寸（约63mil或者1.6mm）板厚也就形成了行业默认标准。
 
-其实TI在Advanced Schottky Family就有注明了高速信号相关的PCB Layout Guide，老wu这里找了一份1985年编写的，上传到专栏的资源区里头了，感兴趣的朋友可以下载下来看一下。
+如今，基板材料的发展已经非常多样化，但1.6mm(或者英制单位的63mil)依然是PCB板厂的默认成品板厚，但标准板厚范围扩展到了0.8mm~1.6mm。（具体以板厂的工艺为准，有些板厂是0.6mm~2.5mm）
 
-老wu这里对这份TI的Advanced Schottky Family截取了部分内容，让我们看看1980年代，当时对于解决信号完整性问题的一些关注点：
+当然，如果要生产更薄或者更厚（比如20层板）的PCB也是可以的，比如0.4mm或者3.0mm，但需要额外支付板材费用，所以PCB设计时需要进行考虑。
 
-[TI Advanced Schottky Family](https://www.mr-wu.cn/wp-content/uploads/2021/01/TI-Advanced-Schottky-Family.pdf)
+在确定 PCB 板厚时，需要考虑许多设计和制造因素，如：
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-1.jpg)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-1.jpg)由于信号上升沿时间变短，需要关注更高次谐波对信号频谱的贡献，哪怕信号周期只有几MHz！我们所关注的最高频率也能超过100MHz！
+- 铜厚
+- 板材
+- PCB的层数
+- 信号类型
+- 通孔的类型
+- 操作环境
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/截屏2021-01-14-下午11.31.47.png)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/截屏2021-01-14-下午11.31.47.png)
+影响PCB厚度的制造因素包括：
 
-还要关注阻抗的控制
+- 钻孔设备的工艺能力
+- 铜厚
+- 层数
+- 分板方法
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-串扰问题.png)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-串扰问题.png)
+对于非标准厚度的PCB设计时需要考虑的因素：
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-串扰问题2.png)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-串扰问题2.png)
+1.板厂的工艺能力
 
-还要关注信号间的串扰问题，减小走线到参考平面的距离H或者拉大走线间距S都能减小走线间的串扰。
+首先要考虑的是你的板厂是否有设备来制造你所需要的电路板厚度。这一决定应在设计过程中尽早作出，同时还要考虑其他相关DFM的设计要求。否则，你可能会被迫进行修改并重新设计你的PCB层叠结构。
 
-[![img](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-反射问题.jpg)](https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/信号完整性的历史（黑魔法开始出现）-反射问题.jpg)
+2.延长交付时间
 
-还要关注阻抗不匹配造成的反射影响
+如果选择了板厂不是常备的材料，往往会造成PCB的生产周期延长，所以对于非标板厚需要考虑交付时间。
 
-<div class="tutor-page-segment tutor-attachments-wrap">
-        <h3>附件</h3>
-                    <a href="https://www.mr-wu.cn/wp-content/uploads/2021/01/TI-Advanced-Schottky-Family.pdf" download="TI Advanced Schottky Family.pdf" class="tutor-lesson-attachment clearfix">
-                <div class="tutor-attachment-icon">
-                    <i class="tutor-icon-document"></i>
-                </div>
-                <div class="tutor-attachment-info">
-                    <span>TI Advanced Schottky Family.pdf</span>
-                    <span>1.85 MB</span>
-                </div>
-            </a>
-                </div>
+3.额外的费用
+
+这可能是最为重要的一点，你需要评估特殊板材的成本、额外的制造成本以及延长交付的时间成本，以确定额外成本是否可以接受。
+
+优先采用标准的PCB厚度将使你的板子制造得更快，成本更低。但是，如果你决定选择非标厚度，那么你在启动PCB设计之前，就应该第一时间与板厂沟通，确保板厂的工艺可以制造，并且沟通好交付时间以及额外的制造费用。
