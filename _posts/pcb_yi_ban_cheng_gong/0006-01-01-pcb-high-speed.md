@@ -1,6 +1,6 @@
 ---
-title: "高频？高速？更要关注带宽！"
-subtitle: "PCB设计一板即成功专栏"
+title: "2.2 高频？高速？更要关注带宽！"
+subtitle: "第二章 PCB设计必知必会的概念"
 layout: post
 date:   2021-01-01
 author: "Huanqing"
@@ -14,7 +14,7 @@ tags:
 <div class="tutor-lesson-content-area">
 
     <input type="hidden" id="tutor_video_tracking_information" value="{&quot;post_id&quot;:37362,&quot;best_watch_time&quot;:0,&quot;autoload_next_course_content&quot;:false}">
-		<p>1981年IBM个人计算机问世，至今也已快40多年了，现在的个人计算机与1981年的IBM PC 已经有了很大的不同，而1973年摩托罗拉公司发明的大哥大，曾经是身份的象征，现改称为手机，也变成了日常生活的必需品。对于这两者而言，有一个趋势是不变的：对更多功能和服务的需求，以及提供这些功能和服务所需的更多带宽。</p>
+    	<p>1981年IBM个人计算机问世，至今也已快40多年了，现在的个人计算机与1981年的IBM PC 已经有了很大的不同，而1973年摩托罗拉公司发明的大哥大，曾经是身份的象征，现改称为手机，也变成了日常生活的必需品。对于这两者而言，有一个趋势是不变的：对更多功能和服务的需求，以及提供这些功能和服务所需的更多带宽。</p>
 <p><a href="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg" data-rel="lightbox-gallery-HyvojIod" data-rl_title="" data-rl_caption="" title="" data-lightbox-gallery="lightbox-gallery-Hyvo"><picture class="aligncenter size-full wp-image-40047 sp-no-webp"><source type="image/webp" srcset="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.webp"><source type="image/jpeg" srcset="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg"><img src="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg" class="aligncenter size-full wp-image-40047 sp-no-webp lazyloaded" height="425" width="640" srcset="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg" data-ll-status="loaded"><noscript><img src="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg" class="aligncenter size-full wp-image-40047 sp-no-webp" height="425" width="640" srcset="https://cdnimg.mr-wu.cn/wp-content/uploads/2021/01/ibm-pc-640x425-1.jpg"></noscript></picture></a></p>
 <p style="text-align: center;">1981年IBM 推出的个人计算机</p>
 <p>第一代PC用户能够创建一个简单的电子表格便感到兴奋不已。而现在，发布会上的PPT需要漂亮的图片、高质量的音频和高清无码的视频。而手机也已不再是单纯的通话工具，半天不刷微视频就总感觉少了些什么 🤳</p>
