@@ -19,13 +19,13 @@ tags:
 
 #### 1. Win + R 打开运行，输入 gpedit.msc
 
-<img src="https://gitee.com/hawkingwu/PicGo/raw/master/image-20221008183739171.png" alt="image-20221008183739171" style="zoom: 67%;" />
+<img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbmNzcU1kZGpqZDRncFZCM1BROWdKV2RMV1RtaGc_ZT1ubGhaUFA.png" alt="image-20221008183739171" style="zoom: 67%;" />
 
 
 
 #### 2. 依次打开 Windows 设置 → 安全设置 → 本地策略 → 安全选项，将 “帐户:使用空密码的本地帐户只允许进行控制台登录” 设置为禁用。
 
-![image-20221008184141273](https://gitee.com/hawkingwu/PicGo/raw/master/image-20221008184141273.png)
+![image-20221008184141273](https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbmNzcU1kZGpqZDRncFZDUEl3YU02TFZHVEhad1E_ZT1kVzNmNno.png)
 
 
 
